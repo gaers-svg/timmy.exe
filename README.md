@@ -1,2 +1,2 @@
 # timmy.exe
-i am not responsible
+i am not responsible for any damages caused
